@@ -9,7 +9,7 @@ router.post("/register", async (req, res) => {
         req.session.user_id = userData.id;
         req.session.logged_in = true;
 
-        res.status(200).json(userData);
+        res.status(200).json('User successfully created!');
     });    
   } catch (err) {
     res.status(500).json(err);
