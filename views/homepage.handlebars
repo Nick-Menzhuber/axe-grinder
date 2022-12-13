@@ -1,0 +1,22 @@
+{{#each post as |post|}}
+<section class="card">
+    <p style="color:#861723; font-size:15px; font-weight: bold;">{{username}}</p>
+
+    <p style="font-size:40px; font-weight:bolder; align-self: center;">{{post_body}}</p>
+    <div class="card-footer">
+        <button class="comment-btn" type="button" data-toggle="collapse" data-target="#collapseExample"
+            aria-expanded="false" aria-controls="collapseExample">
+            Comment
+        </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                    <button class="comment-btn" style="margin-top:5px;">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{/each}}

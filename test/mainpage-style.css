@@ -46,3 +46,30 @@ main {
 .dropdown {
     background-color:#861723;
 }
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #FFFFF0;
+    background-clip: border-box;
+    border-radius: 0.25rem;
+}
+
+.card-footer {
+    padding: 0.75rem 1.25rem;
+    background-color: #861723;
+}
+
+.comment-btn {
+    border: none;
+    border-radius: 10px;
+}
+
+.post-user {
+    color:#861723;
+}
