@@ -31,8 +31,6 @@ a {
 
 .navbar-dark {
     background-color:#0f1926;
-    display: flex;
-    justify-content: space-between;
 }
 
 .navigation {
