@@ -73,3 +73,55 @@ main {
 .post-user {
     color:#861723;
 }
+
+.bio-intro {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bio-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-header {
+    background-color: #861723;
+    width: 100%;
+    text-align: center;
+}
+
+.acnt-posts{
+    background-color: #FFFFF0;
+    color:black;
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.login-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.page-title {
+    font-weight: bolder;
+    padding: 25px;
+}
+
+.login-btn {
+    border-radius: 10px;
+    border: none;
+    padding:5px;
+    width:100%;
+    background-color: #861723;
+    color: white;
+    margin-top: 10px;
+}
