@@ -1,0 +1,48 @@
+
+body {
+    background-color:#0f1926;
+    padding: 300px;
+}
+
+footer {
+    background-color:#861723;
+    height: 250px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    color: white;
+}
+
+a {
+    color:white;
+}
+
+.footer-stuff {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.navbar-dark {
+    background-color:#0f1926;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+}
+
+main {
+    background-color: #252f3c;
+    padding-bottom: 75px;
+}
+
+.dropdown {
+    background-color:#861723;
+}
