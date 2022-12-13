@@ -1,0 +1,124 @@
+body {
+    background-color:#0f1926;
+    padding: 300px;
+}
+
+footer {
+    background-color:#861723;
+    height: 250px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    color: white;
+}
+
+a {
+    color:white;
+}
+
+.footer-stuff {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.navbar-dark {
+    background-color:#0f1926;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+}
+
+main {
+    background-color: #252f3c;
+    padding-bottom: 75px;
+}
+
+.dropdown {
+    background-color:#861723;
+}
+
+.heading-text-container {
+    background-color: #861723;
+    width: 900px;
+    height: 62px;
+    top: 50px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.heading-text-container h2 {
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-weight: bolder;
+    align-content: center;
+
+
+}
+
+.welcome-text {
+    color: white;
+    margin-left: 120px;
+    margin-right: 120px;
+    position: relative;
+    margin-top: 100px;
+    font-size: 20px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.name-label {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.email-label {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.message-label {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.submit-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button-container button {
+    background-color: #861723;
+    margin-top: 50px;
+    border: none;
+    width: 400px;
+    height: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.submit-button-container button:hover {
+    background-color: white;
+    color:#861723
+}
