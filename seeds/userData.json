@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Norman Osborn",
+    "email": "gobby@hotmail.com",
+    "password": "pumpkinBomb"
+  },
+  {
+    "name": "Eddie Brock",
+    "email": "Venom@gmail.com",
+    "password": "alwaysHungry"
+  },
+  {
+    "name": "Otto Octavius",
+    "email": "drock@aol.com",
+    "password": "pwr0daSun"
+  },
+  {
+    "name": "Curt Conners",
+    "email": "lizard@gmail.com",
+    "password": "newRightArm"
+  },
+  {
+    "name": "Cletus Cassidy",
+    "email": "carnage@gmail.com",
+    "password": "maximumCarnage"
+  },
+  {
+    "name": "Adrian Tooms",
+    "email": "vulture@yahoo.com",
+    "password": "watchMeIcarus!"
+  }
+]
