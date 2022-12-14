@@ -1,8 +1,8 @@
-{{#each posts as |posts|}}
+{{#each posts as |post|}}
 <section class="card">
-    <p style="color:#861723; font-size:15px; font-weight: bold;">{{username}}</p>
+    <p style="color:#861723; font-size:15px; font-weight: bold;">{{post.title}}</p>
 
-    <p style="font-size:40px; font-weight:bolder; align-self: center;">{{post_body}}</p>
+    <p style="font-size:40px; font-weight:bolder; align-self: center;">{{post.text}}</p>
     <div class="card-footer">
         <button class="comment-btn" type="button" data-toggle="collapse" data-target="#collapseExample"
             aria-expanded="false" aria-controls="collapseExample">
