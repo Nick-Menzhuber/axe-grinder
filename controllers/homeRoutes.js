@@ -6,12 +6,12 @@ router.get("/", async (req, res) => {
   try {
     // Get all posts and JOIN with user data
     const postData = await Post.findAll({
-      // include: [
-      //   {
-      //     model: User,
-      //     attributes: ['name'],
-      //   },
-      // ],
+       include: [
+         {
+          model: User,
+          attributes: ['name'],
+       },
+      ],
     });
 
     // Serialize data so the template can read it
@@ -83,11 +83,20 @@ router.get("/login", (req, res) => {
 });
 
 router.get("/aboutus", (req, res) => {
-  res.render("aboutus");
+  res.render("aboutus", {
+    logged_in: req.session.logged_in,
+  });
 });
 
 router.get("/contactus", (req, res) => {
-  res.render("contactus");
+  res.render("contactus", {
+    logged_in: req.session.logged_in,
+  });
 });
 
+router.get("/account", (req, res) => {
+  res.render("account", {
+    logged_in: req.session.logged_in,
+  });
+});
 module.exports = router;
