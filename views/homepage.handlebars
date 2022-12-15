@@ -1,29 +1,8 @@
-<button class="login-btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
-    aria-controls="collapseExample">
-    Add Post!
-</button>
-</p>
-<div class="collapse" id="collapseExample">
-    <div class="card card-body">
-        <form class="form post-form">
-            <div class="form-group">
-                <p>Title:</p>
-                <input type="text" id="postTitle">
-            </div>
-            <div class="form-group">
-                <textarea class="form-input" rows="4" type="text" id="createPost"></textarea>
-            </div>
-            <div class="form-group">
-                <button class="comment-btn" style="margin-top:5px;" id="addPost" type="submite">Submit</button>
-            </div>
-        </form>
-    </div>
-</div>
 
 {{#each posts as |post|}}
 <section class="card">
+    <p style="padding:3px;">{{post.user.name}}</p>
     <p style="color:#861723; font-size:15px; font-weight: bold; padding:10px;">{{post.title}}</p>
-
     <p style="font-size:40px; font-weight:bolder; text-align:center; padding:10px;"><a href="/post/{{post.id}}"
             style="color:black;">{{post.text}}</a></p>
     <div class="card-footer">
@@ -47,3 +26,4 @@
     </div>
 </section>
 {{/each}}
+        <script src="/js/createComment.js"></script>

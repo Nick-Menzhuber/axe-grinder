@@ -2,11 +2,12 @@ const createPost = async (event) => {
     event.preventDefault();
   
     const text = document.querySelector('#createPost').value.trim();
-  
-    if (text) {
+    const title = document.querySelector('#postTitle').value.trim();
+
+    if (text && title) {
       const response = await fetch(`/api/posts/new`, {
         method: "POST",
-        body: JSON.stringify({ text }),
+        body: JSON.stringify({ text, title }),
         headers: { "Content-Type": "application/json" },
       });
   console.log(response);    
@@ -19,6 +20,6 @@ const createPost = async (event) => {
   };
   
   document
-    .querySelector('#comment-submit-button')
-    .addEventListener("submit", createNewComment);
+    .querySelector('#addPost')
+    .addEventListener("submit", createPost);
   

@@ -1,21 +1,45 @@
-        <section class="container bio-page" style="color:white;">
-            <div class="bio-intro">
-                <img src="placeholder">
-                <h3 class="account-header">BIO</h3>
-                <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.</p>
+<section class="container bio-page" style="color:white;">
+    <div class="bio-intro">
+        <img src="">
+        <h3 class="account-header">BIO</h3>
+        <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="bio-posts">
+        <h3 class="account-header">POSTS</h3>
+        <button class="login-btn" type="button" data-toggle="collapse" data-target="#collapseExample"
+            aria-expanded="false" aria-controls="collapseExample">
+            Add Post!
+        </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <form class="form post-form">
+                    <div class="form-group">
+                        <p>Title:</p>
+                        <input type="text" id="postTitle">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input" rows="4" type="text" id="createPost"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="comment-btn" style="margin-top:5px;" id="addPost" type="submite">Submit</button>
+                    </div>
+                </form>
             </div>
-            <div class="bio-posts">
-                <h3 class="account-header">POSTS</h3>
-                {{#each post as |post|}}
-                <div class="row">
-                    <div class="col acnt-posts">{{post_body}}</div>
-                    <div class="col acnt-posts">{{post_body}}</div>
-                    <div class="col acnt-posts">{{post_body}}</div>
-                    <div class="w-100"></div>
-                </div>
-            </div>
-        </section>
+        </div>
+        {{#each post as |post|}}
+        <div class="row">
+            <div class="col acnt-posts">{{post_body}}</div>
+            <div class="col acnt-posts">{{post_body}}</div>
+            <div class="col acnt-posts">{{post_body}}</div>
+            <div class="w-100"></div>
+        </div>
+        {{/each}}
+    </div>
+</section>
+        <script src="/js/createPost.js"></script>
