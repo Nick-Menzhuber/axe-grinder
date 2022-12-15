@@ -1,12 +1,15 @@
 
 body {
     background-color:#0f1926;
-    padding: 300px;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 footer {
     background-color:#861723;
-    height: 250px;
+    height: 225px;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -40,7 +43,9 @@ a {
 
 main {
     background-color: #252f3c;
-    padding-bottom: 75px;
+    padding: 75px;
+    overflow-y:scroll;
+    max-height: 500px;
 }
 
 .dropdown {
@@ -213,4 +218,13 @@ main {
 .submit-button-container button:hover {
     background-color: white;
     color:#861723
+}
+
+.card {
+    margin:75px;
+}
+
+.comment-section {
+    padding:10px;
+    
 }

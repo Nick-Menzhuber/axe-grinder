@@ -1,11 +1,25 @@
+<button class="login-btn" type="button" data-toggle="collapse" data-target="#collapseExample"
+            aria-expanded="false" aria-controls="collapseExample">
+            Add Post!
+        </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <div class="form-group">
+                    <textarea class="form-control" rows="5"></textarea>
+                    <button class="comment-btn" style="margin-top:5px;" id="addPost">Submit</button>
+                </div>
+            </div>
+        </div>
+
 {{#each posts as |post|}}
 <section class="card">
-    <p style="color:#861723; font-size:15px; font-weight: bold;">{{post.title}}</p>
+    <p style="color:#861723; font-size:15px; font-weight: bold; padding:10px;">{{post.title}}</p>
 
-    <p style="font-size:40px; font-weight:bolder; align-self: center;">{{post.text}}</p>
+    <p style="font-size:40px; font-weight:bolder; text-align:center; padding:10px;"><a href="/post/{{post.id}}" style="color:black;">{{post.text}}</a></p>
     <div class="card-footer">
         <button class="comment-btn" type="button" data-toggle="collapse" data-target="#collapseExample"
-            aria-expanded="false" aria-controls="collapseExample">
+            aria-expanded="false" aria-controls="collapseExample" id="comment-button">
             Comment
         </button>
         </p>
@@ -13,7 +27,7 @@
             <div class="card card-body">
                 <div class="form-group">
                     <textarea class="form-control" rows="5" id="comment"></textarea>
-                    <button class="comment-btn" style="margin-top:5px;">Submit</button>
+                    <button class="comment-btn" style="margin-top:5px;" id="commentsubmit">Submit</button>
                 </div>
             </div>
         </div>

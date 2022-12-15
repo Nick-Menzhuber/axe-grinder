@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Post, User } = require("../models");
+const { Post, User, Comment } = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
@@ -25,26 +25,29 @@ router.get("/", async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-});
+})
 
+// GET ONE POST AND LOAD COMMENTS
 router.get("/post/:id", async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
       include: [
         {
           model: User,
-          attributes: ["name"],
+          attributes: ['name'],
+        }, 
+        {
+          model: Comment,
+          attributes: ["text"],
         },
       ],
     });
 
     const post = postData.get({ plain: true });
-
-    res.render("post", {
-      ...post,
-      logged_in: req.session.logged_in,
-    });
+    console.log(post);
+    res.render('comment', { post, logged_in: req.session.logged_in });
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });
