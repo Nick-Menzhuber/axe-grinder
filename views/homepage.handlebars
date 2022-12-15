@@ -1,7 +1,7 @@
 
 {{#each posts as |post|}}
 <section class="card">
-    <p style="padding:3px;">{{post.user.name}}</p>
+    <p style="padding:3px;">{{post.user.name}} on {{format_date post.date_created}}</p>
     <p style="color:#861723; font-size:15px; font-weight: bold; padding:10px;">{{post.title}}</p>
     <p style="font-size:40px; font-weight:bolder; text-align:center; padding:10px;"><a href="/post/{{post.id}}"
             style="color:black;">{{post.text}}</a></p>
