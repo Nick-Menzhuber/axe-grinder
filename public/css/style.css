@@ -37,7 +37,7 @@ a {
 }
 
 .navigation {
-    position: fixed;
+    position: absolute;
     top: 0;
 }
 
@@ -101,7 +101,7 @@ main {
 .acnt-posts{
     background-color: #FFFFF0;
     color:black;
-    padding: 40px;
+    padding: 55px;
     margin: 20px;
     text-align: center;
     font-weight: bold;

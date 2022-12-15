@@ -7,7 +7,8 @@
         <h3 class="account-header">COMMENTS</h3>
         {{#each post.comments as |comment|}}
         <div class="col acnt-posts">
-            <p>{{comment.text}}</p>
+            <p style="color:black;">{{post.user.name}}</p>
+            <h4>{{comment.text}}</h4>
         </div>
         {{/each}}
     </div>
