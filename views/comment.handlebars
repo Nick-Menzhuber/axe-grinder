@@ -1,0 +1,14 @@
+<section class="container bio-page" style="color:white;">
+    <div class="comment-section">
+        <p>{{post.title}}</p>
+        <h3 style="text-align:center; font-size:40px;">{{post.text}}</h3>
+    </div>
+    <div class="bio-posts">
+        <h3 class="account-header">COMMENTS</h3>
+        {{#each post.comments as |comment|}}
+        <div class="col acnt-posts">
+            <p>{{comment.text}}</p>
+        </div>
+        {{/each}}
+    </div>
+</section>
