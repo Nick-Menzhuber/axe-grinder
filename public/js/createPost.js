@@ -1,10 +1,10 @@
-const createNewComment = async (event) => {
+const createPost = async (event) => {
     event.preventDefault();
   
-    const text = document.querySelector('#comment-text-box').value.trim();
+    const text = document.querySelector('#createPost').value.trim();
   
     if (text) {
-      const response = await fetch(`/api/comments`, {
+      const response = await fetch(`/api/posts/new`, {
         method: "POST",
         body: JSON.stringify({ text }),
         headers: { "Content-Type": "application/json" },
