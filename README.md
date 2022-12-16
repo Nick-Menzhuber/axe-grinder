@@ -7,15 +7,15 @@
  An app to post, vote on, and argue about controversial music opinions. Each post follows a set controversial music opinion template and users can vote on the temperature of each take. Hot takes rise to the top of the feed, while the coldest takes sink to the bottom and eventually off the feed.
 
   ## Table of Contents
-  - [User Story](#userstory)
+  - [UserStory](#userstory)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
   - [Contributors](#contributors)
   - [Test](#test)
-  - [Screenshots](#Screenshots)
+  - [Screenshots](#screenshots)
 
-  ## User Story
+  ## UserStory
   
 
 * AS a music fan I want to experience the thrill of exchanging controversial music opinions and arguing about them with fellow music fans.
