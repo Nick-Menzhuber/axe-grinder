@@ -3,9 +3,9 @@ const createPost = async (event) => {
   
     const text = document.querySelector('#createPost').value.trim();
     const title = document.querySelector('#postTitle').value.trim();
-
+    //console.log("text and title", text, title)
     if (text && title) {
-      const response = await fetch(`/api/posts/new`, {
+      const response = await fetch('/', {
         method: "POST",
         body: JSON.stringify({ text, title }),
         headers: { "Content-Type": "application/json" },
@@ -14,7 +14,7 @@ const createPost = async (event) => {
       if (response.ok) {
         document.location.replace("/");
       } else {
-        alert("Failed to add comment.");
+        alert("Failed to add post.");
       }
     }
   };
